@@ -1,0 +1,254 @@
+The Project Gutenberg eBook of Debian GNU/Linux : Guide to Installation and Usage
+Title: Debian GNU/Linux : Guide to Installation and Usage
+*** START OF THE PROJECT GUTENBERG EBOOK DEBIAN GNU/LINUX : GUIDE TO INSTALLATION AND USAGE ***
+Debian GNU/Linux: Guide to Installation and Usage
+ 1.1 What Is Debian?
+ 3.2 Debian GNU/Linux Installation Main Menu
+ 13.4 Software Development with Debian
+   Linux Documentation Project for their work on what became the Debian
+   Of course, it’s impossible to thank the hundreds of Debian
+   Debian GNU/Linux ship with literally thousands of applications, and
+   research. Debian GNU/Linux has brought the power of Free Software to
+   Starting with a Free Software such as Debian GNU/Linux can be the
+   We’re glad to have this opportunity to introduce you to Debian! As
+   talk a bit about what exactly Debian is—what it does, and how it
+   Debian and you. Finally, we close the chapter with a bit of
+1.1 What Is Debian?
+   _Debian_ is a free operating system (OS) for your computer. An
+   other programs. Debian uses the _Linux_ kernel, a completely free
+   a business to playing games to writing more software. Debian comes
+   The Debian system is a bit like a pyramid. At the base is Linux. On
+   are also from GNU. The Debian developers act as architects and
+   together into an integrated, stable operating system: Debian
+   small parts (programs) in new ways. Debian is like an erector set:
+   amount of work you put into getting your job done. Debian supplies
+   core tools that make up Debian: what tools to use in certain
+1.1.1 Who Creates Debian?
+   Debian is an all-volunteer Internet-based development project. There
+   As we mentioned earlier in section 1.1, the design of Debian
+   This means that Debian has features those other operating systems
+   permit many users to work at once, Debian must allow many programs
+   If you keep in mind what Debian was originally designed to do, many
+   When Debian developers and users speak of “Free Software,” they
+   refer to _freedom_ rather than price. Debian is free in this sense:
+   access to the source code for this purpose. The Debian Free Software
+   more detailed discussion of free software on the Debian web site[5].
+ [3] http://www.debian.org/social_contract#guidelines
+ [5] http://www.debian.org/
+   Debian GNU/Linux Project was founded based on these Free Software
+   Debian is so committed to free software that we thought it would be
+   Contract[8] promises that Debian will always be 100% free software.
+   When you install a package from the Debian main distribution, you
+ [8] http://www.debian.org/social_contract
+   Although Debian believes in free software, there are cases where
+   possible Debian will support this; though proprietary software is
+   commercial software is software sold for money. Debian permits
+   This book is aimed at readers who are new to Debian GNU/Linux. It
+   inside a Debian system. The idea is to empower you to solve new
+   authors at debian-guide@complete.org. We’re especially interested in
+   Please do not send the authors technical questions about Debian,
+   Debian isn’t as intuitively obvious as some other operating systems.
+   Debian, it’s time to start putting it on your computer! We start by
+   talking about how to prepare for a Debian install, then about
+   Debian does not impose hardware requirements beyond the requirements
+   the Debian System Requirements[1] list and the Linux Documentation
+ [1] http://www.debian.org/releases/slink/i386/ch-hardware-req.en.html
+   available in Debian, you’ll probably need around 2GB. Actually,
+   Debian makes it possible to have both Debian GNU/Linux and another
+   Debian.
+   Before you install Debian on your computer, it is generally a good
+   Windows NT, DOS, etc.) and you want to install Debian GNU/Linux on
+   For your convenience, Debian offers a number of default “profiles”
+   and data. Notably, the Debian /var directory contains a lot of state
+   plan to install many programs that are not part of the Debian
+   during the installation of Debian. If your computer will be solely
+   dedicated to Debian you should partition during installation as
+   your native operating system prior to Debian installation. Note that
+   NT), or OS/2 and it is desired to put Debian onto the same disk
+   system, and the other will be used for Debian. During the
+   installation of Debian, you will be given the opportunity to use the
+   Debian portion of the disk as you see fit, i.e., as swap or as a
+   the tools directory on your Debian CD-ROM. This disk must be
+2.3.7 Debian Installation Steps
+   As you initially install Debian, you will proceed through several
+   Booting the Debian installation system, the first step, is generally
+   The “Debian base system” is a core set of packages that are required
+   to run Debian in a minimal, stand-alone fashion. dbootstrap will
+   The final step is the installation of the remainder of the Debian
+   shells, and development environments. The rest of the Debian system
+   standard Debian package management tools, such as dselect. This step
+   If your computer didn’t “see” the Debian CD-ROM, the easiest option
+   then use them to start Debian. Don’t worry; after Debian is finished
+   first one “Debian 2.1 Install/Rescue Disk” and the second “Debian
+   insert your Debian GNU/Linux CD-ROM into your CD-ROM drive. First,
+  Booting Debian
+   You are now ready to boot into Debian! Shut down your existing
+3.2 Debian GNU/Linux Installation Main Menu
+   the main menu, titled “Debian GNU/Linux Installation Main Menu.” The
+   Journal_[1] that you could teach a chicken to install Debian! He
+   You will now create the partitions that you need to install Debian.
+   left cfdisk, you should be back in Debian’s dbootstrap installation
+   an old system without destroying it. If you’re upgrading, Debian can
+   Debian 2.1 release notes contain upgrade instructions[2].
+ http://www.debian.org/releases/slink/i386/release-notes/ch-upgrading-
+   If you do have PCMCIA but are not installing your Debian system
+   /etc/init.d/network. (On a Debian system, daemons are started by
+   you have official Debian media, the default value should be correct.
+   Debian system, but you must perform some configuration before the
+   be running another operating system as well as Debian. Unix (and
+   If are booting directly into Debian and the system doesn’t start up,
+   Debian should boot, and you should see the same messages as when you
+   software configurations offered by Debian. You can always choose
+   Debian!
+   containing the additional Debian packages that you want to install
+   and start it later after you have transported the Debian package
+   your Debian system. This is done using Debian’s package management
+   are currently about 2,250 packages in Debian 2.1). It will be run
+   Debian Linux ‘dselect’ package handling frontend.
+   recommended way of installing a recent version of Debian from a set
+   The location of the Debian distribution on the disk(s)
+   the Debian archive or from the network. This method uses the “apt”
+     ◼ debiandoc-sgml
+   __ Opt admin    boot-floppie Scripts to create the Debian
+   _* Opt admin    boot-floppie Scripts to create the Debian
+   _* Opt admin    boot-floppie Scripts to create the Debian
+   eager to get Debian running as soon as possible. Well, please be
+   Installing a new Debian system is a complex thing, but dselect can
+   in general when you’re talking about Debian.
+   we introduce you to the Debian command line, some security
+   into more detail on these topics and introduce you to the Debian
+   To use Debian, you must identify yourself to the system. This is so
+   Debian yourself, you should have been asked to give such a name
+   Debian allows you to be as secure or as insecure as you like.
+   When you start Debian, you’ll see a _prompt:_ a request from the
+   computer to do something. The Debian default shell offers several
+   Because Debian is a multiuser system, it’s designed to keep any one
+   Debian is safe from these threats. You won’t need an anti-virus
+   consoles is one of the simplest things about Debian: There are “hot
+   Debian comes with six virtual consoles enabled by default, which you
+   organization of files on a Debian system:
+   so with the standard Debian commands.
+   directory. If you’ve just installed Debian, your home directory may
+   probably something like /home/myuser; so ~myuser/docs/debian.ps is
+   /home/myuser/doc/debian.ps.
+   from the GNU project (bash, the Debian default), the Korn shell
+   Debian is a multitasking system, so you need a way to do more than
+   colon-separated list of directories. The default value on Debian
+   configurations on a Debian system. _System-wide configuration_
+     Tip: If you just installed Debian, you may be the only user. You
+   file. -rw-r-r- is the default permissions mode on Debian.
+   Debian. If you’re curious, cd to each directory and type ls to see
+           The Debian system doesn’t install anything in this
+           Debian package. You can also install software in your home
+   home directory and /etc. On a Debian system, there’s rarely an
+   it’s absolutely necessary. Of course, if you’re using Debian at a
+   Debian comes with a utility that can guess at the contents of a file
+   zless /usr/doc/ae/changelog.Debian.gz
+   download from Debian, but you can also download a text file that
+   Debian provides a large variety of text editors. vi and Emacs are
+   be found even on the Debian rescue disks, so it pays to know a bit
+   Window managers available on a Debian system include fvwm, fvwm2,
+   You start an X client the same way you start any other Debian
+   When you start X, Debian runs some shell scripts that start your
+   You can see how Debian’s X startup works in the file /etc/X11/
+   A Debian system uses a filesystem to store and manage your data.
+   Debian.
+   Debian system. For a summary of some devices, see Table 2.1 on page
+   as the one you may have used to install Debian. You’ll need to be
+   filesystems when you boot, so Debian automatically adds entries to
+   Backups are important under any operating system. Debian GNU/Linux
+   This section is a quick-start guide to setting up PPP on Debian. If
+   Configuring PPP on Debian GNU/Linux is straightforward once you have
+   all the information you’ll need. Debian makes things even easier
+   installation and removal of pre-built software, such as Debian
+   The Debian package system solves these problems. It allows you to
+   helps the computer manage them properly. Debian packages have
+   FTP site or on your official Debian CD-ROM.
+   mounted under /proc on Debian systems. This is a “pseudo-filesystem”
+   You also ought to keep up-to-date with patches or updates to Debian;
+   these can be found on your nearest Debian FTP mirror.
+   server, it is still pays to know a bit about security. Debian’s
+13.4 Software Development with Debian
+   Debian makes a great platform for software development and
+   more popular development programs in Debian:
+   On Debian systems, you can find documentation in at least the
+     the Debian package.
+     documents, if you’ve installed the Debian packages containing
+     ◼ The Debian Documentation Project[1] has written some manuals.
+     ◼ The Debian support page[2] has a FAQ and other resources. You
+ [1] http://www.debian.org/~elphick/ddp/
+ [2] http://www.debian.org/support/
+     ◼ /usr/doc/_packagename_ often has Debian-specific information,
+     ◼ Use the Debian Documentation Project manuals for conceptual
+     explanations and Debian-specific information.
+   There are Debian packages for the HOWTOs. doc-linux-text contains
+   Debian has packaged translations of the HOWTOs in various languages
+   that you may prefer if English is not your native language. Debian
+   The correct place to ask for help with Debian is the debian-user
+   mailing list at debian-user@lists.debian.org. If you know how to use
+   IRC (Internet Relay Chat), you can use the #debian channel on
+   irc.debian.org. You can find general GNU/Linux help on the
+   consultants to provide guaranteed support services. The Debian
+ [5] http://www.debian.org/
+   you mail debian-user, you will get higher-quality responses, and
+   documentation. Remember, Debian is a volunteer effort and people are
+     always want to mention the version of Debian you’re using. You may
+     ◼ Be polite. Remember that Debian is an all-volunteer effort, and
+     ◼ Answer questions yourself when you know the answer. Debian
+   In Debian, as in life, things don’t always work as you might expect
+   or want them to. While Debian has a well-deserved reputation for
+   One common source of trouble is the printing system in Debian.
+   Unix. However, Debian makes it easier. An easy way to print is with
+   email to submit@bugs.debian.org. You _must_ include the following as
+   installed Debian. Most likely, you just turn the computer on. But
+           What Is Debian?
+                        Debian Installation Steps | Choosing Your
+                Debian
+                        Booting Debian
+                        Debian Installation Steps | Choosing Your
+   Debian
+                        Booting Debian
+   Debian base system
+           Debian Installation Steps | Choosing Your Installation Media
+   Debian mailing list
+           Who Creates Debian?
+                        Debian Installation Steps
+                Debian mailing list
+           What Is Debian?
+           What Is Debian?
+                        Lossless Repartitioning | Debian Installation Steps |
+                        Debian Installation Steps | Choosing Your
+                        Debian GNU/Linux Installation Main
+                        from DOS or | Lossless Repartitioning | Debian
+                Debian mailing list
+                Debian mailing list
+                        Software Development with Debian | Software
+                        Development with Debian
+                Debian
+                        Debian GNU/Linux Installation Main
+                        Debian GNU/Linux Installation Main
+           What Is Debian?
+                Debian
+                                     Booting Debian
+                        What Is Debian?
+                                     Repartitioning | Debian Installation
+                Debian base system
+                        Debian Installation Steps | Choosing Your
+                        Who Creates Debian?
+           Software Development with Debian | Software Development with
+           Debian
+                        What Is Debian?
+                        Software Development with Debian | Software
+                        Development with Debian
+                             Debian
+                        What Is Debian?
+                        Who Creates Debian?
+                        Software Development with Debian | Software
+                        Development with Debian
+           Debian Installation Steps | Choosing Your Installation Media
+                Debian
+                        Debian Installation Steps
+   Debian GNU/Linux: Guide to Installation and Usage
+   -split 0 -t ‘Debian GNU/Linux: Guide to Installation and Usage’
+   debian-tutorial.tex
+*** END OF THE PROJECT GUTENBERG EBOOK DEBIAN GNU/LINUX : GUIDE TO INSTALLATION AND USAGE ***
