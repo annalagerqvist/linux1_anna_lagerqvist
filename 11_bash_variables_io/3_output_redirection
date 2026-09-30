@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+echo '# Input and output' > README.md
+
+echo "This note is about I/O in bash" >> README.md
+
+echo "My current directory is " >> README.md
+
+pwd >> README.md
+
+echo >> README.md
+
+echo "## Files in this folder" >> README.md
+tree >> README.md 

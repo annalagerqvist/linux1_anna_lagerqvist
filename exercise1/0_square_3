@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+side=$1
+
+area=$((side*2))
+perimeter=$((side*4))
+
+
+if [[ $# -eq 0 ]]; then
+	echo "You have to enter the value of a side"
+	exit 1
+else 
+	echo "A square with $side has perimeter: $perimeter and area: $area"
+
+fi 

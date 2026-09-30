@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+read -p 'Enter a radius for circle: ' radius
+
+PI=3.14
+area=$(echo "scale=2; $PI*$radius^2" | bc)
+perimeter=$(echo "scale=2; 2*$PI*$radius" | bc)
+
+echo "A circle with lenght $radius and width has perimeter: $perimeter and area: $area"
+
+if [[ $radius = 1 ]]; then
+	echo "this is unit circle"
+else
+	echo "this is not unit circle"
+fi 

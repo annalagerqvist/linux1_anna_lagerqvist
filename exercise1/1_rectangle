@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+read -p 'Enter a lenght for rectangle: ' lenght
+read -p 'Enter a width fo rectangle: ' width
+
+area=$(($lenght*$width))
+perimeter=$((2*($lenght+$width)))
+
+echo "A rectangle with lenght $lenght and width $width has perimeter: $perimeter and area: $area" 
