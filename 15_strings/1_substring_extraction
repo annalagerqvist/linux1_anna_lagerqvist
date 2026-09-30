@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+fruit='sweet mango'
+echo '$fruit'
+# double quote does variable expansion
+echo "$fruit"
+
+# slicing
+echo "${fruit:2:1}"
+echo "${fruit:2:2}"
+
+# number of characters
+echo "${#fruit}"
+
+# characters counting from right/back 
+echo "${fruit: -5}"
